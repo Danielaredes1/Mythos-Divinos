@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    
+}
+
+#principal {
+    height: 750px;
+    width: 100%;
+}
+
+#principal h1 {
+    font-family: "GFS Neohellenic", sans-serif ;
+    font-weight: 300px;
+    font-size: 90px;
+}
+
+ #principal p {
+    font-family:"Open Sans", sans-serif;
+    font-weight: 200px;
+    font-size: 25px;
+    text-align: left;
+    position: relative;
+    width: 700px;
+}
+
+#principal img {
+    position: relative;
+    float: right;
+    top: -600px;
+    right: -40px;
+    height: 700px;
+}
+
+#principal h1, p {
+    margin-left: 200px;
+}
+
+#fotos {
+    height: 2000px;
+}
+
+#fotos h2 {
+    font-family:"GFS Neohellenic", sans-serif ;
+    font-size: 75px;
+}
+
+#fotos figure {
+    display: inline-block;  
+    position: relative;
+}
+
+#fotos figure h3 {
+    position: relative; 
+    text-align: center;
+    top: -300px;
+    font-size:30px;
+    font-family: "Open Sans", sans-serif;
+    transition: transform 2s, opacity 2s; 
+    opacity: 1; 
+}
+
+#fotos figure img {
+    transition: opacity 2s;
+    opacity: 0;
+    height: 300px; 
+    margin-left: 60px;
+    background-color: black;
+    border: 10px solid ;
+}
+
+#fotos figure:hover h3 {
+    transform: translate(-20px,-100px);
+}
+
+#fotos figure:hover img {
+    opacity: 1;
+}
+
+
