@@ -5,16 +5,12 @@ body {
     overflow-x: hidden;
     background-image: url(imgs/Fundo.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed; 
     background-size: cover;
 }
 
-main {
-    
-}
-
-article {
-    
+header {
+   
 }
 
 #principal {
@@ -40,9 +36,10 @@ article {
 #principal img {
     position: relative;
     float: right;
-    top: -511px;
+    top: -600px;
     right: -40px;
     height: 700px;
+    margin-right: 4%;
 }
 
 #principal h1, p {
@@ -73,6 +70,9 @@ article {
     font-family: "Open Sans", sans-serif;
     transition: transform 2s, opacity 2s; 
     opacity: 1; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
 }
 
 #fotos img {
@@ -86,7 +86,8 @@ article {
 }
 
 #fotos figure:hover h3 {
-    transform: translate(10px,-190px);
+    transform: translate(10px,-220px);
+    background
 }
 
 #fotos figure:hover img {
