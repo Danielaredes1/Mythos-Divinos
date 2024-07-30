@@ -2,25 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
     overflow-x: hidden;
+    background-image: url(imgs/Fundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 main {
-    background-image: url(imgs/Fundo.png);
-    background-repeat: no-repeat;
+    
 }
 
 article {
-    width: 100%;
+    
 }
 
 #principal {
     height: 750px;
-    width: 100%;
+
 }
 
 #principal h1 {
@@ -79,15 +78,15 @@ article {
 #fotos img {
     transition: opacity 2s;
     opacity: 0;
-    height: 300px; 
+    height: 400px; 
+    width:400px ;
     margin-left: 60px;
-    
     border: 10px solid rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
 
 #fotos figure:hover h3 {
-    transform: translate(10px,-100px);
+    transform: translate(10px,-190px);
 }
 
 #fotos figure:hover img {
@@ -100,8 +99,6 @@ article {
 
 #fotos table tr {
     position: relative;
-    left: -50px;
+    left: 5%;
+
 }
-
-
-
