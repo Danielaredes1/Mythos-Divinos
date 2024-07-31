@@ -3,7 +3,11 @@
 
 body {
     overflow-x: hidden;
-    background-color: #D6D4D0;
+}
+
+html {
+    background-image: linear-gradient(80deg, #D6D4D0 0 , #D6D4D0 60%, #7689a7 40%);
+    
 }
 
 header{
@@ -15,8 +19,9 @@ header{
     top: 0;
     width: 100%;
     position: absolute;  
-    height: 60px;
+    height: 4.2em;
     right: 0px;
+    margin: 0px;
 }
 
 
@@ -24,11 +29,12 @@ a {
     text-decoration: none;
     color: aliceblue;
     padding: 5px;
-    font-size: 15px;
-    margin-right: 50px;
+    font-size: 25px;
+    margin-right: 70px;
     border-radius: 30px;
     transition: color 1s, background-color 1s;
     cursor: pointer;
+    margin-bottom: 0px;
 }
 
 header a:hover {
@@ -38,27 +44,25 @@ header a:hover {
 }
 
 #logo {
-    width: 2.5em;
-    padding-right: 20px;
-    padding-left: 40px;
+    width: 3em;
+    padding-left: 20px;
 }
 
 #nome {
     color: #b0a933;
     font-family: "GFS Neohellenic", sans-serif;
-    font-size: 25px;
-    margin-right: 50px;
+    font-size: 30px;
+    margin-right: 80px;
     font-weight: bold;
     text-shadow: 3px 3px black;
 }
 
 footer{
     background-color: #001f49;
-    bottom: -1200px; 
     width: 100%;
-    position: absolute;
-    height: 5em;
+    height: 5.4em;
     left: 0px;
+    position: absolute;
 }
 
 footer p {
@@ -71,24 +75,24 @@ footer p {
 footer img {
     width: 30px;
     margin-right: 20px;
-    display: inline;
-    
+    display: inline-block;
+}
+
+#redes {
+    margin-left: 47%;
 }
 
 #principal {
-    height: 600px;
-    background-image: url(imgs/Fundo2.png);
-    background-repeat: no-repeat;
-    background-attachment:local; 
-    background-size:cover;
-    position:relative;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+    height: 900px;
 }
 
 #principal h1 {
     font-family: "GFS Neohellenic", sans-serif ;
     font-weight: 300px;
     font-size: 90px;
+    margin: 65px;
+    position: relative;
+    top: 30px;
 }
 
  #principal p {
@@ -113,13 +117,17 @@ footer img {
     margin-left: 4%;
 }
 
+main {
+    background-image: linear-gradient(80deg, #D6D4D0 0 , #D6D4D0 60%, #7689a7 40%);
+    background-position: local;
+    background-size: cover;
+}
+
 #fotos {
     height: 1000px;
-    background-image: url(imgs/Fundo.png);
     background-repeat: no-repeat;
     background-attachment:local; 
     background-size:cover;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
 }
 
 
@@ -128,13 +136,13 @@ footer img {
     font-size: 75px;
     position: relative;
     margin-left: 4%;
+    margin-top: 0px;
 }
 
 #fotos figure {
     display:inline-block;  
     position: relative;
     justify-content: space-between;
-    
 }
 
 #fotos figure h3 {
@@ -154,10 +162,11 @@ footer img {
 #fotos img {
     transition: opacity 2s;
     opacity: 0;
-    height: 15em; 
-    width: 15em;
+    height: 18em; 
+    width: 18em;
     border: 10px solid rgba(0, 0, 0, 0.8);
     border-radius: 10px;
+    
 }
 
 #fotos figure:hover h3 {
@@ -178,8 +187,7 @@ footer img {
 }
 
 #fotos table td {
-   display: inline;
-   justify-content: space-between;
+
 }
 
 
