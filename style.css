@@ -7,7 +7,6 @@ body {
 
 html {
     background-image: linear-gradient(80deg, #D6D4D0 0 , #D6D4D0 60%, #7689a7 40%);
-    
 }
 
 header{
@@ -19,18 +18,18 @@ header{
     top: 0;
     width: 100%;
     position: absolute;  
-    height: 4.2em;
+    height: 11%;
     right: 0px;
     margin: 0px;
 }
 
 
-a {
+header a {
     text-decoration: none;
     color: aliceblue;
-    padding: 5px;
-    font-size: 25px;
-    margin-right: 70px;
+    padding: .3em;
+    font-size: 1.2em;
+    margin-right: 1.4em;
     border-radius: 30px;
     transition: color 1s, background-color 1s;
     cursor: pointer;
@@ -45,14 +44,14 @@ header a:hover {
 
 #logo {
     width: 3em;
-    padding-left: 20px;
+    padding-left: 1%; 
 }
 
 #nome {
     color: #b0a933;
     font-family: "GFS Neohellenic", sans-serif;
-    font-size: 30px;
-    margin-right: 80px;
+    font-size: 1.8em;
+    margin-right: 4%;
     font-weight: bold;
     text-shadow: 3px 3px black;
 }
@@ -83,7 +82,7 @@ footer img {
 }
 
 #principal {
-    height: 900px;
+    height: 700px;
 }
 
 #principal h1 {
@@ -107,9 +106,9 @@ footer img {
 #principal img {
     position: relative;
     float: right;
-    top: -600px;
-    right: -100px;
-    height: 600px;
+    top: -400px;
+    right: -70px;
+    height: 350px;
     margin-right: 4%;
 }
 
@@ -170,7 +169,7 @@ main {
 }
 
 #fotos figure:hover h3 {
-    transform: translate(-0.1em,-4.7em);
+    transform: translate(-0.1em,-6.5em);
 }
 
 #fotos figure:hover img {
@@ -186,8 +185,5 @@ main {
     left: 3%;
 }
 
-#fotos table td {
-
-}
 
 
