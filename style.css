@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 html {
@@ -448,6 +448,15 @@ main {
         margin-right: .5em;
     }
 
+    header{
+        top: 0;
+        width: 100%;
+        position: absolute;  
+        height: 5%;
+        right: 0px;
+        margin: 0px;
+    }
+
     #logo {
         width: 2.2em;
         padding-left: 1%; 
@@ -486,15 +495,32 @@ main {
         justify-content: space-between;
     }
     
+    #fotos figure {
+        position: relative;
+        margin-left: 63%;
+    }
+    
     #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:13px;
+        display: none;
     }
     
     #fotos img {
-        height: 12em; 
-        width: 12em;
+        height: 30em; 
+        width: 30em;
+        opacity: 1;
+        border: 20px solid rgba(255, 255, 255, 0.5);
+    }
+
+    
+    #fotos table {
+        position: absolute;
+    }
+
+    
+    #fotos table tr {
+        left: -30%;
+        display: flex;
+        flex-direction: column;
     }
     
     #fotos table {
@@ -502,8 +528,13 @@ main {
     }
     
     #fotos table tr {
-        left: 3%;
+        
     }
+
+    footer{
+        bottom: -158%;
+    }
+
 }
 
 @media (max-width:890px) {
@@ -536,19 +567,16 @@ main {
     }
     
     #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:20px;
+        display: none;
     }
     
     #fotos img {
         height: 20em; 
         width: 20em;
+        opacity: 1;
+        border: 20px solid rgba(255, 255, 255, 0.5);
     }
 
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-10em);
-    }
     
     #fotos table {
         position: absolute;
@@ -562,11 +590,11 @@ main {
     }
 
     footer{
-        bottom: -565vh;
+        bottom: -105%;
     }
     
     html {
-        background-image: linear-gradient( hsl(40, 7%, 83%) 0 , #D6D4D0 100%, #7689a7 0%);
+        background-image: linear-gradient(80deg, #000000 0 , #000000 100%, #1d1b1b 0%);
     }
 
 }
@@ -701,6 +729,7 @@ main {
         flex-direction: column;
     }
 }
+
 #medusa {
     position: relative;
     animation: flutuando 1.5s ease-in-out 0s infinite alternate;
