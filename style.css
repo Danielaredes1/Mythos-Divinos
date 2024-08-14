@@ -701,6 +701,16 @@ main {
         flex-direction: column;
     }
 }
+#medusa {
+    position: relative;
+    animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes flutuando {
+  from { top: -754px; }
+  to   { top: -690px; }
+}
+
 
 
 
