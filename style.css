@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
-
+ 
 body {
     overflow-x: hidden; 
 }
@@ -33,7 +33,7 @@ header a {
     color: aliceblue;
     padding: .3em;
     font-size: 1.2em;
-    margin-right: 1.4em;
+    margin-right: 2em;
     border-radius: 30px;
     transition: color 1s, background-color 1s;
     cursor: pointer;
@@ -109,15 +109,19 @@ footer img {
     position: relative;
     width: 50%;
 }
-
-#principal img {
+#medusa {
     position: relative;
+    animation: flutuando 1.5s ease-in-out 0s infinite alternate;
     float: right;
-    top: -400px;
-    right: -70px;
-    height: 350px;
-    margin-right: 4%;
+    height:1054px;
+    margin-right: 2%;
 }
+
+@keyframes flutuando {
+  from { top: -754px; }
+  to   { top: -710px; }
+}
+
 
 #principal h1, p {
     margin-left: 4%;
@@ -168,7 +172,7 @@ main {
     opacity: 0;
     height: 18em; 
     width: 18em;
-    border: 10px solid rgba(0, 0, 0, 0.8);
+    border: 8px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     
 }
@@ -190,21 +194,621 @@ main {
     left: 7%;
 }
 
-@media (max-width:1260px) {
+@media (max-width:1921px) {
     header a{
-        font-size: .9em;
+        font-size: 1.8em;
         padding: .3em;
-        margin-right: 3em;
+        margin-right: 5em;
     }
 
     #logo {
-        width: 2.6em;
+        width: 5em;
+        margin-right: 1%; 
+    }
+
+    #nome {
+        font-size: 2.8em;
+        margin-right: 7%;
+    }
+
+    #principal h1 {
+        font-size: 90px;
+    }
+    
+     #principal p {
+        font-size: 30px;
+        width: 40%;
+    }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+        height: 1400px;
+    }
+
+    @keyframes flutuando {
+        from { top: -974px; }
+        to   { top: -930px; }
+      }
+      
+
+    #fotos h2 {
+        font-size: 70px;
+        margin-left: 4%;
+        margin-top: 30px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:28px;
+        width: 460px;
+    }
+
+    #fotos figure:hover h3 {
+        transform: translate(-0.1em,-12em);
+    }
+    
+    #fotos img {
+        height: 28em; 
+        width: 28em;
+        margin-right: 5em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 3%;
+    }
+
+    #fotos {
+        margin-top: 100px;
+    }
+
+    footer{
+        height: 6em;
+        bottom: -1240px;
+    }
+    
+    footer p {
+        font-size: 13px;
+    }
+    
+    footer img {
+        width: 30px;
+        margin-right: .5%;
+        display: inline-block;
+    }
+    
+    #redes {
+        margin-left: 47%;
+    }
+}
+
+@media (max-width:1680px) {
+    header a{
+        font-size: 1.4em;
+        padding: .3em;
+        margin-right: 6em;
+    }
+
+    #logo {
+        width: 4em;
+        margin-right: 1%; 
+    }
+
+    #nome {
+        font-size: 2.4em;
+        margin-right: 10%;
+    }
+
+    #principal h1 {
+        font-size: 80px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 40%;
+    }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+        height: 1200px;
+    }
+
+    @keyframes flutuando {
+        from { top: -874px; }
+        to   { top: -830px; }
+      }
+      
+
+    #fotos h2 {
+        font-size: 60px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:23px;
+        width: 350px;
+    }
+
+    #fotos figure:hover h3 {
+        transform: translate(-0.1em,-9.5em);
+    }
+    
+    #fotos img {
+        height: 21em; 
+        width: 21em;
+        margin-right: 5.5em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 3%;
+    }
+}
+
+@media (max-width:1610px) {
+    #nome {
+        font-size: 2.4em;
+        margin-right: 6%;
+    }
+}
+
+@media (max-width:1590px) {
+    header a{
+        font-size: 1.4em;
+        padding: .3em;
+        margin-right: 6em;
+    }
+
+    #logo {
+        width: 4em;
+        margin-right: 1%; 
+    }
+
+    #nome {
+        font-size: 2.4em;
+        margin-right: 8%;
+    }
+
+    #principal h1 {
+        font-size: 80px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 40%;
+    }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+        height: 1200px;
+    }
+
+    @keyframes flutuando {
+        from { top: -874px; }
+        to   { top: -830px; }
+      }
+      
+
+    #fotos h2 {
+        font-size: 60px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:23px;
+        width: 350px;
+    }
+
+    #fotos figure:hover h3 {
+        transform: translate(-0.1em,-9.5em);
+    }
+    
+    #fotos img {
+        height: 21em; 
+        width: 21em;
+        margin-right: 5.5em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 3%;
+    }
+}
+
+@media (max-width:1570px) {
+    #nome {
+        font-size: 2.4em;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width:1553px) {
+    header a{
+        font-size: 1.4em;
+        padding: .3em;
+        margin-right: 6em;
+    }
+
+    #logo {
+        width: 4em;
+        margin-right: 1%; 
+    }
+
+    #nome {
+        font-size: 2.4em;
+        margin-right: 5%;
+    }
+
+    #principal h1 {
+        font-size: 80px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 40%;
+    }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+        height: 1200px;
+    }
+
+    @keyframes flutuando {
+        from { top: -874px; }
+        to   { top: -830px; }
+      }
+      
+
+    #fotos h2 {
+        font-size: 60px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:23px;
+        width: 350px;
+    }
+
+    #fotos figure:hover h3 {
+        transform: translate(-0.1em,-9.5em);
+    }
+    
+    #fotos img {
+        height: 21em; 
+        width: 21em;
+        margin-right: 5.5em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 3%;
+    }
+}
+
+@media (max-width:1517px) {
+    header a{
+        font-size: 1.4em;
+        padding: .3em;
+        margin-right: 5em;
+    }
+
+    #logo {
+        width: 4em;
+        margin-right: 1%; 
+    }
+
+    #nome {
+        font-size: 2.4em;
+        margin-right: 8%;
+    }
+
+    #principal h1 {
+        font-size: 80px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 40%;
+    }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+        height: 1200px;
+    }
+
+    @keyframes flutuando {
+        from { top: -874px; }
+        to   { top: -830px; }
+      }
+      
+
+    #fotos h2 {
+        font-size: 60px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:23px;
+        width: 330px;
+    }
+
+    #fotos figure:hover h3 {
+        transform: translate(-0.1em,-8.8em);
+    }
+    
+    #fotos img {
+        height: 20em; 
+        width: 20em;
+        margin-right: 5.5em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 3%;
+    }
+}
+
+@media (max-width:1440px) {
+    header a{
+        font-size: 1.3em;
+        padding: .3em;
+        margin-right: 5.5em;
+    }
+
+    #logo {
+        width: 3.6em;
         padding-left: 1%; 
     }
 
     #nome {
-        font-size: 1.6em;
-        margin-right: 4%;
+        font-size: 2.3em;
+        margin-right: 8%;
+    }
+
+    #principal h1 {
+        font-size: 70px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 45%;
+    }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+    }
+
+    @keyframes flutuando {
+        from { top: -754px; }
+        to   { top: -710px; }
+      }
+
+    #fotos h2 {
+        font-size: 75px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:30px;
+    }
+    
+    #fotos img {
+        height: 19em; 
+        width: 19em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 9%;
+    }
+    
+}
+
+@media (max-width:1368px) {
+    header a{
+        font-size: 1.3em;
+        padding: .3em;
+        margin-right: 5.5em;
+    }
+
+    #logo {
+        width: 3.6em;
+        padding-left: 1%; 
+    }
+
+    #nome {
+        font-size: 2.3em;
+        margin-right: 5%;
+    }
+
+    #principal h1 {
+        font-size: 70px;
+        margin: 65px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 45%;
+    }
+
+    #fotos h2 {
+        font-size: 75px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:30px;
+    }
+    
+    #fotos img {
+        height: 19em; 
+        width: 19em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 6%;
+    }
+    
+}
+
+@media (max-width:1323px) {
+    header a{
+        font-size: 1.3em;
+        padding: .3em;
+        margin-right: 5.1em;
+    }
+
+    #logo {
+        width: 3.6em;
+        padding-left: 1%; 
+    }
+
+    #nome {
+        font-size: 2.3em;
+        margin-right: 5%;
+    }
+
+    #principal h1 {
+        font-size: 70px;
+        margin: 65px;
+    }
+    
+     #principal p {
+        font-size: 25px;
+        width: 45%;
+    }
+
+    #fotos h2 {
+        font-size: 75px;
+        margin-left: 4%;
+        margin-top: 0px;
+    }
+    
+    #fotos figure {
+        display:inline-block;  
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #fotos figure h3 {
+        text-align: center;
+        top: -200px;
+        font-size:30px;
+    }
+    
+    #fotos img {
+        height: 18em; 
+        width: 18em;
+    }
+    
+    #fotos table {
+        position: absolute;
+    }
+    
+    #fotos table tr {
+        left: 6%;
+    }
+    
+}
+
+@media (max-width:1277px) {
+    header a{
+        font-size: 1.4em;
+        padding: .3em;
+        margin-right: 3.2em;
+    }
+
+    #logo {
+        width: 3.4em;
+        padding-left: 1%; 
+    }
+
+    #nome {
+        font-size: 2.1em;
+        margin-right: 7%;
     }
 
     #principal h1 {
@@ -252,19 +856,19 @@ main {
 
 @media (max-width:1210px) {
     header a{
-        font-size: .9em;
+        font-size: 1.3em;
         padding: .3em;
-        margin-right: 2em;
+        margin-right: 3em;
     }
 
     #logo {
-        width: 2.5em;
+        width: 3.5em;
         padding-left: 1%; 
     }
 
     #nome {
-        font-size: 1.5em;
-        margin-right: 4%;
+        font-size: 2em;
+        margin-right: 7%;
     }
 
     #principal h1 {
@@ -276,6 +880,16 @@ main {
         font-size: 25px;
         width: 40%;
     }
+
+    #medusa {
+        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+    }
+
+    @keyframes flutuando {
+        from { top: -854px; }
+        to   { top: -810px; }
+      }
+      
 
     #fotos h2 {
         font-size: 60px;
@@ -296,8 +910,8 @@ main {
     }
     
     #fotos img {
-        height: 16em; 
-        width: 16em;
+        height: 16.5em; 
+        width: 16.5em;
     }
     
     #fotos table {
@@ -729,24 +1343,3 @@ main {
         flex-direction: column;
     }
 }
-
-#medusa {
-    position: relative;
-    animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-}
-
-@keyframes flutuando {
-  from { top: -754px; }
-  to   { top: -690px; }
-}
-
-
-
-
-
-
-
-
-
-
-
