@@ -6,9 +6,8 @@ body {
     margin: 0;
 }
 
-p {
-    color: white;
-    font-size: 3em;
+html {
+    overflow-x: hidden;
 }
 
 header, nav{
@@ -84,7 +83,7 @@ nav {
         top: 0;
         background-color: #262a30;
         height: 150%;
-        width: 35vh;
+        width: 100%;
         padding: 1em;
         animation-duration: 1s;
         margin-left: 100vw;
@@ -94,7 +93,7 @@ nav {
 
 @keyframes sidebar {
     from {margin-left: 100vw;}
-    to {margin-left: 76vw;}
+    to {margin-left: 0vw;}
 }
 
 footer{
@@ -145,13 +144,13 @@ footer img {
     position: relative;
     animation: flutuando 1s ease-in-out 0s infinite alternate;
     float: right;
-    height:35em;
+    height:554px;
     margin-right: 2%;
 }
 
 @keyframes flutuando {
-  from { top: -600px; }
-  to   { top: -500px; }
+  from { top: -594px; }
+  to   { top: -570px; }
 }
 
 
@@ -201,12 +200,9 @@ main {
     background-color: rgba(255, 255, 255, 0.5);
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
-    width: 100%;
+    
 }
 
-#fotos figure {
-    flex: 1 1 calc(33.333% - 2em);  
-}
 
 #fotos img {
     transition: opacity 2s;
@@ -225,43 +221,248 @@ main {
     opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        padding: 0 1em;
+@media screen and (min-width: 1px) and (max-width: 375px) {
+
+    body {
+        background-image: none;
+        background-color: #000000;
     }
+
+    #principal h1 {
+        font-size: 4.5em;
+        text-align: center;
+    }
+
+    #principal p {
+        font-size: 1.5em;
+        width: 89%;
+        text-align: justify;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 5px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+    #fotos h2 {
+        font-size: 3.5em;
+        text-align: center;
+    } 
+
+
+    #medusa {
+       display: none;
+    }
+
+    #row1, #row2 {
+        flex-direction: column;
+    }
+
+    #personagens {
+        margin-left: 20px;
+    }
+
+    #fotos figure img {
+        height: 14em;
+        width: 14em;
+        opacity: 1;
+    }
+
+    #fotos figure h3 {
+        top: -340px;
+    }
+
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 499px) {
+
+    body {
+        background-image: none;
+        background-color: #000000;
+    }
+
+    #principal h1 {
+        font-size: 4.5em;
+        text-align: center;
+    }
+
+    #principal p {
+        font-size: 1.5em;
+        width: 89%;
+        text-align: justify;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 5px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+
+    #fotos h2 {
+        font-size: 3.5em;
+        text-align: center;
+    } 
+
+
+    #medusa {
+       display: none;
+    }
+
+    #row1, #row2 {
+        flex-direction: column;
+    }
+
+    #personagens {
+        margin-left: 20px;
+    }
+
+    #fotos figure img {
+        height: 20em;
+        width: 20em;
+        opacity: 1;
+    }
+
+    #fotos figure h3 {
+        top: -420px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
 
     nav {
         gap: 2em;
     }
 
+    #nome {
+        margin-right: 4em;
+    }
+
     .pags {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #principal h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     #principal p {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #fotos h2 {
-        font-size: 2.5em;
+        font-size: 3.5em;
+    } 
+
+
+    #medusa {
+        position: relative;
+        animation: flutuando 1s ease-in-out 0s infinite alternate;
+        float: right;
+        height: 354px;
+        
+    }
+    
+    @keyframes flutuando {
+      from { top: -494px; }
+      to   { top: -470px; }
+    }
+
+    #fotos h2 {
+        font-size: 3.5em;
+    }
+
+    #row1, #row2 {
+        flex-direction: column;
+    }
+
+    #personagens {
+        margin-left: 170px;
     }
 
     #fotos figure {
-        flex: 1 1 calc(50% - 2em);
+        width: 21em;
     }
 
-    #medusa {
-        height: 50vh;
-        margin-right: 0;
-        margin-bottom: 2em;
+    #fotos figure img {
+        height: 20em;
+        width: 20em;
+        opacity: 1;
+    }
+
+    #fotos figure h3 {
+        top: -420px;
     }
 }
 
-@media screen and (min-width: 1500px) and (max-width:2560px) {
+@media screen and (min-width:851px) and (max-width: 1300px) {
+
+    nav {
+        gap: 2em;
+    }
+
+    #nome {
+        margin-right: 4em;
+    }
+
+    .pags {
+        font-size: 1.5em;
+    }
+
+    #principal h1 {
+        font-size: 4em;
+    }
+
+    #principal p {
+        font-size: 1.5em;
+    }
+
+    #fotos h2 {
+        font-size: 3.5em;
+    } 
+
+
+    #medusa {
+        position: relative;
+        animation: flutuando 1s ease-in-out 0s infinite alternate;
+        float: right;
+        height: 554px;
+        
+    }
+    
+    @keyframes flutuando {
+      from { top: -594px; }
+      to   { top: -570px; }
+    }
+
+    #fotos h2 {
+        font-size: 3.5em;
+    }
+
+    #fotos figure h3 {
+        transition: transform 2s, opacity 2s; 
+    }
+    
+    #fotos figure:hover h3 {
+        transform: translate(-0.1em,-6.9em);
+    }
+
+    #row1, #row2 {
+        flex-direction: column;
+    }
+
+    #fotos figure {
+        width: 21em;
+    }
+
+    #fotos figure img {
+        height: 20em;
+        width: 20em;
+    }
+
+    #personagens {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width:1500px) and (max-width:2560px) {
     header {
         height: 7.5em;
     }
@@ -295,13 +496,13 @@ main {
         position: relative;
         animation: flutuando 1s ease-in-out 0s infinite alternate;
         float: right;
-        height:900px;
+        height:1054px;
         
     }
     
     @keyframes flutuando {
-      from { top: -990px; }
-      to   { top: -1100px; }
+      from { top: -894px; }
+      to   { top: -870px; }
     }
 
     #fotos h2 {
