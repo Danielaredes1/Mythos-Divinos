@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+p {
+    color: white;
+    font-size: 3em;
+}
+
 header, nav{
     display: flex;
     flex-direction: row;
@@ -140,13 +145,13 @@ footer img {
     position: relative;
     animation: flutuando 1s ease-in-out 0s infinite alternate;
     float: right;
-    height:1054px;
+    height:35em;
     margin-right: 2%;
 }
 
 @keyframes flutuando {
-  from { top: -894px; }
-  to   { top: -870px; }
+  from { top: -600px; }
+  to   { top: -500px; }
 }
 
 
@@ -290,13 +295,13 @@ main {
         position: relative;
         animation: flutuando 1s ease-in-out 0s infinite alternate;
         float: right;
-        height:1854px;
+        height:900px;
         
     }
     
     @keyframes flutuando {
-      from { top: -1394px; }
-      to   { top: -1370px; }
+      from { top: -990px; }
+      to   { top: -1100px; }
     }
 
     #fotos h2 {
