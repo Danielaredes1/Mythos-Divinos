@@ -8,7 +8,7 @@ function toggleSidebar()
     showSidebar = !showSidebar;
     if (showSidebar) 
     {
-        nav.style.marginLeft = '76vw';
+        nav.style.marginLeft = '0vw';
         nav.style.animationName = 'sidebar';
         
     } 
