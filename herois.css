@@ -10,13 +10,36 @@ p {
     text-align: center;
 }
 
+#homero h1{
+    text-align: center;
+}
+
 .img_esquerda {
     float: left;
     height: 32em;
     margin-left: 2em;
     margin-right: 2em;
+    border-radius: 10%;
 }
 
 #famosos p {
     font-size: 2.73em;
+}
+
+.img_direita {
+    float: right;
+    height: 32em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 10%;
+}
+
+#outros {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    background-color: darkblue;
 }
