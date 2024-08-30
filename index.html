@@ -6,25 +6,36 @@
     <title>MythosDivinos</title>
     <link rel="icon" type="image/x-icon" href="imgs/logo-removebg-preview.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 
 </head>
 <body>
-    <header>
-        <img src="imgs/logo-removebg-preview.png" alt="logo" id="logo">
+    <header id="header">
+        <a href="index.html" id="logo"><img src="imgs/logo-removebg-preview.png" alt="logo" ></a>
 
         <p id="nome">Mythos <br> Divinos</p>
 
-        <nav>
-                <a href="index.html">HOME</a>
-                <a href="herois.html">HEROÍS</a>
-                <a href="deuses.html">DEUSES</a>
-                <a href="">LUGARES</a>
-                <a>SOBRE</a>
+        <nav id="pags">
+            <button onclick="toggleSidebar()" id="x-icon" class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </button>
+            <a href="index.html" class="pags">HOME</a>
+            <a href="herois.html" class="pags">HEROÍS</a>
+            <a href="deuses.html" class="pags">DEUSES</a>
+            <a href="" class="pags">LUGARES</a>
+            <a href="" class="pags">SOBRE</a>
         </nav>
+        <button onclick="toggleSidebar()" id="menu" class="menu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </button>
     </header>
-    <main>
+    <main tabindex="0" onclick="closeSidebar()" id="main">
         <article id="principal">
-            <h1>O que é <br> Mitologia?</h1>
+            <h1 id="titulo">O que é <br> Mitologia?</h1>
             <p>Mitologia nada mais é que umconjunto de lendas
             criadas por um povo durante muitas gerações e elas
             eram usadas para explicar fenômenos que elesainda 
@@ -38,49 +49,44 @@
         </article>
         <article id="fotos">
             <h2>Mitologia Grega</h2>
-                <table id="personagens">
-                    <tr>
-                        <td>
-                            <figure id="foto1">
-                                <img src="imgs/Perseu.jpeg" alt="perseu" >
-                                <h3>PERSEU</h3>
-                            </figure>
-                        </td> 
-                        <td>
-                            <figure id="foto2">
-                                <img src="imgs/Minotauro.jpeg" alt="minotauro" >
-                                <h3>MINOTAURO</h3>
-                            </figure> 
-                        </td>
-                        <td>
-                            <figure id="foto3">
-                                <img src="imgs/Poseidon.jpeg" alt="poseidon" >
-                                <h3>POSEIDON</h3>
-                            </figure>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td>
-                            <figure id="foto4">
-                                <img src="imgs/Afrodite.jpeg" alt="Afrodite" >
-                                <h3>AFRODITE</h3>
-                            </figure> 
-                        </td>
-                        <td>
-                            <figure id="foto5">
-                                <img src="imgs/Hercules.jpeg" alt="Hercules" >
-                                <h3>HERCULES</h3>
-                            </figure>
-                        </td> 
-                        <td>
-                            <figure id="foto6">
-                                <img src="imgs/Ares.jpeg" alt="Ares" >
-                                <h3>ARES</h3>
-                            </figure>
-                        </td> 
-                </table>
+            <div id="personagens">
+                <div id="row1">
+                    <figure id="foto1">
+                        <img src="imgs/Perseu.jpeg" alt="perseu" >
+                        <h3>PERSEU</h3>
+                    </figure>
+                       
+                    <figure id="foto2">
+                        <img src="imgs/Minotauro.jpeg" alt="minotauro" >
+                        <h3>MINOTAURO</h3>
+                    </figure> 
+                        
+                    <figure id="foto3">
+                        <img src="imgs/Poseidon.jpeg" alt="poseidon" >
+                        <h3>POSEIDON</h3>
+                    </figure>
+                </div>
+                       
+                <div id="row2">
+                    <figure id="foto4">
+                        <img src="imgs/Afrodite.jpeg" alt="Afrodite" >
+                        <h3>AFRODITE</h3>
+                    </figure> 
+                        
+                    <figure id="foto5">
+                        <img src="imgs/Hercules.jpeg" alt="Hercules" >
+                        <h3>HERCULES</h3>
+                    </figure>
+                        
+                    <figure id="foto6">
+                        <img src="imgs/Ares.jpeg" alt="Ares" >
+                        <h3>ARES</h3>
+                    </figure>
+                </div>
+            </div>
         </article>
     </main>
+    <script src="sidebar.js"></script>
         <footer>
             <p> Mythos Divinos criado e idealizado em 2024
                 TODOS os direitos reservados <br> ao esforço
@@ -94,6 +100,6 @@
             </div>
 
         </footer>
-
+        
 </body>
 </html>
