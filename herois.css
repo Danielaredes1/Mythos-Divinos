@@ -1,0 +1,22 @@
+p {
+    color: white;
+    font-size: 2em;
+}
+#Introdução h1{
+    text-align: center;
+}
+
+#famosos h1{
+    text-align: center;
+}
+
+.img_esquerda {
+    float: left;
+    height: 32em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#famosos p {
+    font-size: 2.73em;
+}
