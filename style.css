@@ -2,77 +2,100 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
  
 body {
-    overflow-x: hidden; 
-}
-
-html {
     background-image: linear-gradient(80deg, #000000 0 , #000000 60%, #1d1b1b 40%);
+    margin: 0;
 }
 
-h1{
-    margin-top: 100px;
-    color: white;
-
-}
-
-p {color: white;
-    font-family:"Open Sans", sans-serif;
-    font-weight: 200px;
-    font-size: 25px;
-}
-
-header{
-    background-color: #262a30;
+header, nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-decoration: none;
-    top: 0;
-    width: 100%;
-    position: absolute;  
-    height: 11%;
-    right: 0px;
-    margin: 0px;
 }
 
-header a {
+header {
+    height: 4.5em;
+    background-color: #262a30;
+}
+
+nav {
+    justify-content: space-between;
+    gap: 4em;
+}
+
+.pags {
     text-decoration: none;
     color: aliceblue;
-    padding: .3em;
     font-size: 1.2em;
-    margin-right: 2em;
     border-radius: 30px;
     transition: color 1s, background-color 1s;
     cursor: pointer;
-    margin-bottom: 0px;
+    padding: 10px;
 }
 
-header a:hover {
+.pags:hover {
     color: black;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 30px;
 }
 
-#logo {
+#logo img {
     width: 3em;
-    padding-left: 1%; 
+}
+
+#logo {
+    padding-left: 3%;
 }
 
 #nome {
     color: #b0a933;
     font-family: "GFS Neohellenic", sans-serif;
     font-size: 1.8em;
-    margin-right: 4%;
     font-weight: bold;
     text-shadow: 3px 3px black;
+    margin-right: 7em;
+}
+
+.menu-icon {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #menu {
+        position: absolute;
+        right: 20px;
+    }
+
+    nav {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #262a30;
+        height: 150%;
+        width: 35vh;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: 100vw;
+        z-index: 2;
+    }
+}
+
+@keyframes sidebar {
+    from {margin-left: 100vw;}
+    to {margin-left: 76vw;}
 }
 
 footer{
     background-color:#262a30;
     width: 100%;
     height: 5.4em;
-    left: 0px;
-    position: absolute;
 }
 
 footer p {
@@ -93,7 +116,7 @@ footer img {
 }
 
 #principal {
-    height: 700px;
+    height: 100%;
     color: white;
 }
 
@@ -101,11 +124,8 @@ footer img {
     font-family: "GFS Neohellenic", sans-serif ;
     font-weight: 300px;
     font-size: 90px;
-    margin: 65px;
     position: relative;
     top: 30px;
-    margin-top: 150px;
-    
 }
 
  #principal p {
@@ -118,15 +138,15 @@ footer img {
 }
 #medusa {
     position: relative;
-    animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+    animation: flutuando 1s ease-in-out 0s infinite alternate;
     float: right;
     height:1054px;
     margin-right: 2%;
 }
 
 @keyframes flutuando {
-  from { top: -754px; }
-  to   { top: -710px; }
+  from { top: -894px; }
+  to   { top: -870px; }
 }
 
 
@@ -135,15 +155,25 @@ footer img {
 }
 
 main {
-    
     background-position: local;
     background-size: cover;
 }
 
 #fotos {
-    height: 1000px;
+    height: 100%;
+    margin-top: 150px;
 }
 
+#personagens {
+    margin-left: 40px;
+}
+
+#row1, #row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4em;
+}
 
 #fotos h2 {
     font-family:"GFS Neohellenic", sans-serif ;
@@ -151,13 +181,8 @@ main {
     position: relative;
     margin-left: 4%;
     margin-top: 0px;
+    margin-bottom: 100px;
     color: white;
-}
-
-#fotos figure {
-    display:inline-block;  
-    position: relative;
-    justify-content: space-between;
 }
 
 #fotos figure h3 {
@@ -171,7 +196,11 @@ main {
     background-color: rgba(255, 255, 255, 0.5);
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
-    
+    width: 100%;
+}
+
+#fotos figure {
+    flex: 1 1 calc(33.333% - 2em);  
 }
 
 #fotos img {
@@ -181,1172 +210,119 @@ main {
     width: 18em;
     border: 8px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    
 }
 
 #fotos figure:hover h3 {
-    transform: translate(-0.1em,-6.5em);
+    transform: translate(-0.1em,-6.1em);
 }
 
 #fotos figure:hover img {
     opacity: 1;
 }
 
-#fotos table {
-    position: absolute;
-}
-
-#fotos table tr {
-    position: relative;
-    left: 7%;
-}
-
-@media (max-width:1921px) {
-    header a{
-        font-size: 1.8em;
-        padding: .3em;
-        margin-right: 5em;
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 1em;
     }
 
-    #logo {
-        width: 5em;
-        margin-right: 1%; 
+    nav {
+        gap: 2em;
     }
 
-    #nome {
-        font-size: 2.8em;
-        margin-right: 7%;
+    .pags {
+        font-size: 1em;
     }
 
     #principal h1 {
-        font-size: 90px;
+        font-size: 3em;
     }
-    
-     #principal p {
-        font-size: 30px;
-        width: 40%;
+
+    #principal p {
+        font-size: 1em;
+    }
+
+    #fotos h2 {
+        font-size: 2.5em;
+    }
+
+    #fotos figure {
+        flex: 1 1 calc(50% - 2em);
     }
 
     #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-        height: 1400px;
-    }
-
-    @keyframes flutuando {
-        from { top: -974px; }
-        to   { top: -930px; }
-      }
-      
-
-    #fotos h2 {
-        font-size: 70px;
-        margin-left: 4%;
-        margin-top: 30px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:28px;
-        width: 460px;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-12em);
-    }
-    
-    #fotos img {
-        height: 28em; 
-        width: 28em;
-        margin-right: 5em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-
-    #fotos {
-        margin-top: 100px;
-    }
-
-    footer{
-        height: 6em;
-        bottom: -1240px;
-    }
-    
-    footer p {
-        font-size: 13px;
-    }
-    
-    footer img {
-        width: 30px;
-        margin-right: .5%;
-        display: inline-block;
-    }
-    
-    #redes {
-        margin-left: 47%;
+        height: 50vh;
+        margin-right: 0;
+        margin-bottom: 2em;
     }
 }
 
-@media (max-width:1680px) {
-    header a{
-        font-size: 1.4em;
-        padding: .3em;
-        margin-right: 6em;
+@media screen and (min-width: 1500px) and (max-width:2560px) {
+    header {
+        height: 7.5em;
     }
 
-    #logo {
-        width: 4em;
-        margin-right: 1%; 
-    }
-
-    #nome {
-        font-size: 2.4em;
-        margin-right: 10%;
-    }
-
-    #principal h1 {
-        font-size: 80px;
+    #logo img {
+        width: 5.5em;
     }
     
-     #principal p {
-        font-size: 25px;
-        width: 40%;
-    }
-
-    #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-        height: 1200px;
-    }
-
-    @keyframes flutuando {
-        from { top: -874px; }
-        to   { top: -830px; }
-      }
-      
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:23px;
-        width: 350px;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-9.5em);
-    }
-    
-    #fotos img {
-        height: 21em; 
-        width: 21em;
-        margin-right: 5.5em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:1610px) {
-    #nome {
-        font-size: 2.4em;
-        margin-right: 6%;
-    }
-}
-
-@media (max-width:1590px) {
-    header a{
-        font-size: 1.4em;
-        padding: .3em;
-        margin-right: 6em;
-    }
-
-    #logo {
-        width: 4em;
-        margin-right: 1%; 
-    }
-
-    #nome {
-        font-size: 2.4em;
-        margin-right: 8%;
-    }
-
-    #principal h1 {
-        font-size: 80px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 40%;
-    }
-
-    #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-        height: 1200px;
-    }
-
-    @keyframes flutuando {
-        from { top: -874px; }
-        to   { top: -830px; }
-      }
-      
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:23px;
-        width: 350px;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-9.5em);
-    }
-    
-    #fotos img {
-        height: 21em; 
-        width: 21em;
-        margin-right: 5.5em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:1570px) {
-    #nome {
-        font-size: 2.4em;
-        margin-right: 5%;
-    }
-}
-
-@media (max-width:1553px) {
-    header a{
-        font-size: 1.4em;
-        padding: .3em;
-        margin-right: 6em;
-    }
-
-    #logo {
-        width: 4em;
-        margin-right: 1%; 
-    }
-
-    #nome {
-        font-size: 2.4em;
-        margin-right: 5%;
-    }
-
-    #principal h1 {
-        font-size: 80px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 40%;
-    }
-
-    #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-        height: 1200px;
-    }
-
-    @keyframes flutuando {
-        from { top: -874px; }
-        to   { top: -830px; }
-      }
-      
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:23px;
-        width: 350px;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-9.5em);
-    }
-    
-    #fotos img {
-        height: 21em; 
-        width: 21em;
-        margin-right: 5.5em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:1517px) {
-    header a{
-        font-size: 1.4em;
-        padding: .3em;
-        margin-right: 5em;
-    }
-
-    #logo {
-        width: 4em;
-        margin-right: 1%; 
-    }
-
-    #nome {
-        font-size: 2.4em;
-        margin-right: 8%;
-    }
-
-    #principal h1 {
-        font-size: 80px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 40%;
-    }
-
-    #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-        height: 1200px;
-    }
-
-    @keyframes flutuando {
-        from { top: -874px; }
-        to   { top: -830px; }
-      }
-      
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:23px;
-        width: 330px;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-8.8em);
-    }
-    
-    #fotos img {
-        height: 20em; 
-        width: 20em;
-        margin-right: 5.5em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:1440px) {
-    header a{
-        font-size: 1.3em;
-        padding: .3em;
-        margin-right: 5.5em;
-    }
-
-    #logo {
-        width: 3.6em;
-        padding-left: 1%; 
-    }
-
-    #nome {
+    .pags {
         font-size: 2.3em;
-        margin-right: 8%;
+    }
+
+    nav {
+        gap: 7em;
+    }
+
+    #nome {
+        margin-right: 8em;
+        font-size: 3.2em;
     }
 
     #principal h1 {
-        font-size: 70px;
+        font-size: 9em;
     }
-    
-     #principal p {
-        font-size: 25px;
-        width: 45%;
+
+    #principal p {
+        font-size: 3em;
     }
 
     #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
+        position: relative;
+        animation: flutuando 1s ease-in-out 0s infinite alternate;
+        float: right;
+        height:1854px;
+        
     }
-
+    
     @keyframes flutuando {
-        from { top: -754px; }
-        to   { top: -710px; }
-      }
-
-    #fotos h2 {
-        font-size: 75px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:30px;
-    }
-    
-    #fotos img {
-        height: 19em; 
-        width: 19em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 9%;
-    }
-    
-}
-
-@media (max-width:1368px) {
-    header a{
-        font-size: 1.3em;
-        padding: .3em;
-        margin-right: 5.5em;
-    }
-
-    #logo {
-        width: 3.6em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 2.3em;
-        margin-right: 5%;
-    }
-
-    #principal h1 {
-        font-size: 70px;
-        margin: 65px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 45%;
+      from { top: -1394px; }
+      to   { top: -1370px; }
     }
 
     #fotos h2 {
-        font-size: 75px;
-        margin-left: 4%;
-        margin-top: 0px;
+        font-size: 6em;
     }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
+
     #fotos figure h3 {
-        text-align: center;
         top: -200px;
-        font-size:30px;
-    }
-    
-    #fotos img {
-        height: 19em; 
-        width: 19em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 6%;
-    }
-    
-}
-
-@media (max-width:1323px) {
-    header a{
-        font-size: 1.3em;
-        padding: .3em;
-        margin-right: 5.1em;
-    }
-
-    #logo {
-        width: 3.6em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 2.3em;
-        margin-right: 5%;
-    }
-
-    #principal h1 {
-        font-size: 70px;
-        margin: 65px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 45%;
-    }
-
-    #fotos h2 {
-        font-size: 75px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:30px;
-    }
-    
-    #fotos img {
-        height: 18em; 
-        width: 18em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 6%;
-    }
-    
-}
-
-@media (max-width:1277px) {
-    header a{
-        font-size: 1.4em;
-        padding: .3em;
-        margin-right: 3.2em;
-    }
-
-    #logo {
-        width: 3.4em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 2.1em;
-        margin-right: 7%;
-    }
-
-    #principal h1 {
-        font-size: 70px;
-        margin: 65px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 45%;
-    }
-
-    #fotos h2 {
-        font-size: 75px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:30px;
-    }
-    
-    #fotos img {
-        height: 18em; 
-        width: 18em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-    
-}
-
-@media (max-width:1210px) {
-    header a{
-        font-size: 1.3em;
-        padding: .3em;
-        margin-right: 3em;
-    }
-
-    #logo {
-        width: 3.5em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 2em;
-        margin-right: 7%;
-    }
-
-    #principal h1 {
-        font-size: 60px;
-        margin: 65px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 40%;
-    }
-
-    #medusa {
-        animation: flutuando 1.5s ease-in-out 0s infinite alternate;
-    }
-
-    @keyframes flutuando {
-        from { top: -854px; }
-        to   { top: -810px; }
-      }
-      
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:20px;
-    }
-    
-    #fotos img {
-        height: 16.5em; 
-        width: 16.5em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:1100px) {
-    header a{
-        font-size: .9em;
-        padding: .3em;
-        margin-right: 1.5em;
-    }
-
-    #logo {
-        width: 2.3em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 1.4em;
-        margin-right: 4%;
-    }
-
-    #principal h1 {
-        font-size: 60px;
-        margin: 65px;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 45%;
-    }
-
-    #principal img {
-        top: -400px;
-        right: -70px;
-        height: 300px;
-        margin-right: 4%;
-    }
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:15px;
-    }
-    
-    #fotos img {
-        height: 14em; 
-        width: 14em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:1010px) {
-    header a{
-        font-size: .9em;
-        padding: .3em;
-        margin-right: 1em;
-    }
-
-    #logo {
-        width: 2.3em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 1.3em;
-        margin-right: 4%;
-    }
-
-    #principal h1 {
-        font-size: 60px;
-        margin: 65px;
-        text-align: center;
-    }
-    
-     #principal p {
-        font-size: 30px;
-        width: 90%;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    #principal img { 
-        display: none;
-    }   
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:12px;
-    }
-    
-    #fotos img {
-        height: 13em; 
-        width: 13em;
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        left: 3%;
-    }
-}
-
-@media (max-width:950px) {
-    header a{
-        font-size: .9em;
-        padding: .3em;
-        margin-right: .5em;
-    }
-
-    header{
-        top: 0;
+        font-size: 3em;
         width: 100%;
-        position: absolute;  
-        height: 5%;
-        right: 0px;
-        margin: 0px;
-    }
-
-    #logo {
-        width: 2.2em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 1.2em;
-        margin-right: 4%;
-    }
-
-    #principal h1 {
-        font-size: 60px;
-        margin: 65px;
-        text-align: center;
-    }
-    
-     #principal p {
-        font-size: 30px;
-        width: 90%;
-        text-align: center;
-    }
-
-    #principal img {
-        display: none;
-    }
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-    }
-    
-    #fotos figure {
-        display:inline-block;  
-        position: relative;
-        justify-content: space-between;
-    }
-    
-    #fotos figure {
-        position: relative;
-        margin-left: 63%;
-    }
-    
-    #fotos figure h3 {
-        display: none;
     }
     
     #fotos img {
         height: 30em; 
         width: 30em;
-        opacity: 1;
-        border: 20px solid rgba(255, 255, 255, 0.5);
-    }
-
-    
-    #fotos table {
-        position: absolute;
-    }
-
-    
-    #fotos table tr {
-        left: -30%;
-        display: flex;
-        flex-direction: column;
     }
     
-    #fotos table {
-        position: absolute;
-    }
-    
-    #fotos table tr {
-        
-    }
-
-    footer{
-        bottom: -158%;
-    }
-
-}
-
-@media (max-width:890px) {
-    header a{
-        font-size: .7em;
-        padding: .3em;
-        margin-right: 1.5em;
-    }
-
-    #logo {
-        width: 2.1em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 1.1em;
-        margin-right: 4%;
-    }
-
-    #fotos h2 {
-        font-size: 60px;
-        margin-left: 4%;
-        margin-top: 0px;
-        text-align: center;
-    }
-    
-    #fotos figure {
-        position: relative;
-        margin-left: 63%;
-    }
-    
-    #fotos figure h3 {
-        display: none;
-    }
-    
-    #fotos img {
-        height: 20em; 
-        width: 20em;
-        opacity: 1;
-        border: 20px solid rgba(255, 255, 255, 0.5);
-    }
-
-    
-    #fotos table {
-        position: absolute;
-    }
-
-    
-    #fotos table tr {
-        left: 3%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer{
-        bottom: -105%;
-    }
-    
-    html {
-        background-image: linear-gradient(80deg, #000000 0 , #000000 100%, #1d1b1b 0%);
-    }
-
-}
-
-@media (max-width:768px) { 
-    #fotos figure {
-        position: relative;
-        margin-left: 50%;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:20px;
-    }
-    
-    #fotos img {
-        height: 20em; 
-        width: 20em;
-    }
-
     #fotos figure:hover h3 {
-        transform: translate(-0.1em,-10em);
-    }
-    
-    #fotos table {
-        position: absolute;
+        transform: translate(-0.1em,-8.6em);
     }
 
-    
-    #fotos table tr {
-        left: 3%;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width:680px) {
-    header a{
-        font-size: .9em;
-        padding: .3em;
-        margin-right: .5em;
+    #row1, #row2 {
+        gap: 12em;
     }
 
-    #logo {
-        width: 2.2em;
-        padding-left: 1%; 
-    }
-
-    #nome {
-        font-size: 1.2em;
-        margin-right: 4%;
-    }
-
-    #principal h1 {
-        font-size: 60px;
-        margin: 65px;
-        text-align: center;
-    }
-    
-     #principal p {
-        font-size: 25px;
-        width: 90%;
-        text-align: center;
-    }
-
-    #principal img {
-        display: none;
-    }
-
-    #fotos figure {
-        position: relative;
-        margin-left: 25%;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:20px;
-    }
-    
-    #fotos img {
-        height: 20em; 
-        width: 20em;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-10em);
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-
-    
-    #fotos table tr {
-        left: 3%;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width:568px) { 
-    #fotos figure {
-        position: relative;
-        margin-left: 15%;
-    }
-    
-    #fotos figure h3 {
-        text-align: center;
-        top: -200px;
-        font-size:20px;
-    }
-    
-    #fotos img {
-        height: 20em; 
-        width: 20em;
-    }
-
-    #fotos figure:hover h3 {
-        transform: translate(-0.1em,-10em);
-    }
-    
-    #fotos table {
-        position: absolute;
-    }
-
-    
-    #fotos table tr {
-        left: 3%;
-        display: flex;
-        flex-direction: column;
+    #personagens {
+        margin-left: 200px;
     }
 }
