@@ -7,5 +7,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
+}
+
+p {
+    font-size: 1em;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
 }
