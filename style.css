@@ -6,6 +6,16 @@ body {
     margin: 0;
 }
 
+.easter-egg img {
+    width: 300px; 
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.easter-egg img:hover {
+    transform: scale(1.1); 
+}
+
 html {
     overflow-x: hidden;
 }
@@ -158,8 +168,9 @@ p {
     position: relative;
     animation: flutuando 1s ease-in-out 0s infinite alternate;
     float: right;
-    height:554px;
-    margin-right: 2%;
+    height:500px;
+    margin-right: 10%;
+    width: 400px;
 }
 
 @keyframes flutuando {
