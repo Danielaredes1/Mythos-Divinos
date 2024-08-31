@@ -16,6 +16,10 @@ header, nav{
     align-items: center;
 }
 
+p {
+    color: white
+}
+
 header {
     height: 4.5em;
     background-color: #262a30;
