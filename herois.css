@@ -1,45 +1,121 @@
 p {
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
-#Introdução h1{
-    text-align: center;
-}
-
-#famosos h1{
-    text-align: center;
+h2 {
+    color: white;
+    font-size: 4em;
+    margin-left: 50px;
 }
 
-#homero h1{
-    text-align: center;
+#introduçao {
+    width: 80%;
+}
+
+#introduçao p {
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#famosos div {
+    display: flex;
+}
+
+#famosos p {
+    width: 50%;
+}
+
+h3 {
+    color: white;
+    margin: 0;
+}
+
+#famosos h3 {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#famosos img {
+    margin: 0;
+}
+
+figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 30px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figure {
+    position: relative;
+}
+
+#troia {
+    margin-top: 5%;
+}
+
+#troia p {
+    margin-right: 3%;
+}
+
+main img {
+    height: 22em;
+    width: 22em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 10%;
 }
 
 .img_esquerda {
     float: left;
-    height: 32em;
-    margin-left: 2em;
-    margin-right: 2em;
-    border-radius: 10%;
-}
-
-#famosos p {
-    font-size: 2.73em;
 }
 
 .img_direita {
     float: right;
-    height: 32em;
-    margin-left: 2em;
-    margin-right: 2em;
-    border-radius: 10%;
+}
+
+.card {
+    background-color: rgba(26, 24, 24, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 0;
+    width: 18%;
+}
+
+.card img {
+    width: 13em;
+    height: 13em;
+    margin: 0;
+}
+
+.card figure {
+    width: 13em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #outros {
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: row;
+    margin: 0;
+    gap: 7%;
+    margin-left: 5%;
 }
 
-.card {
-    background-color: darkblue;
-}
+
