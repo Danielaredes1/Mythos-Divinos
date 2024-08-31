@@ -1,5 +1,8 @@
- main h1, h2 {
+ main h1, h2 { 
     margin-left: 4%;
+}
+body {
+    background-image: linear-gradient(84deg, #000000 0 , #000000 55%, #1d1b1b 40%);
 }
 
 main h1 {
