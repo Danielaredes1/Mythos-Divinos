@@ -1,1 +1,57 @@
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-top: 100px;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.5em;
+    height: 100%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px black;
+}
+
+article img {
+    width: 30em;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+ul {
+    color: #ffffff;
+    counter-reset: item; 
+    list-style: none; 
+    padding-left: 0; 
+    font-size: 1.5em;
+  }
+  
+  li {
+    counter-increment: item; 
+    margin-bottom: 5px; 
+  }
+  
+  li::before {
+    content: counter(item) ". ";
+    font-weight: bold; 
+    margin-right: 8px; 
+  }
+
 
