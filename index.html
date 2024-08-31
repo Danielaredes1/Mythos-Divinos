@@ -6,7 +6,7 @@
     <title>MythosDivinos</title>
     <link rel="icon" type="image/x-icon" href="imgs/logo-removebg-preview.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="herois.css">
+    
 
 </head>
 <body>
@@ -22,10 +22,10 @@
                 </svg>
             </button>
             <a href="index.html" class="pags">HOME</a>
-            <a href="herois.html" class="pags">HERÓIS</a>
+            <a href="herois.html" class="pags">HEROÍS</a>
             <a href="deuses.html" class="pags">DEUSES</a>
-            <a href="lugares.html" class="pags">LUGARES</a>
-            <a href="sobre.html" class="pags">SOBRE</a>
+            <a href="" class="pags">LUGARES</a>
+            <a href="" class="pags">SOBRE</a>
         </nav>
         <button onclick="toggleSidebar()" id="menu" class="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -33,91 +33,73 @@
               </svg>
         </button>
     </header>
-<main>
-    <article id="introduçao">
-        <h2>Introdução</h2>
-
-        <p>Alguns dos personagens mais famosos da Mitologia Grega eram os heróis, também conhecidos como semi-deuses.
-            Muitos desses heróis lendários eram conhecidos por terem matado criaturas horrendas, terem lutado em guerra,
-            se tornado reis  entre outros grandes feitos. Alguns desses personagens são conhecidos até hoje, são representados em
-            filmes séries e livros e estão muito difundidos na cultura pop.
-        </p>
-    </article>
-    <article id="famosos">
-        <h2>Mais Famosos</h2>
-        <div id="text_famosos">
-            <figure>
-                <img src="imgs/Hercules.png" class="img_esquerda"> 
-                <figcaption><h3>HERCULES</h3></figcaption> 
-            </figure>
-            <p class="p_esquerda">
-                Os heroís mais famosos atualmente são Herácles dos 12 trabalhos (o nome grego de Hércules, que era seu nome em no Império Romano), 
-                Perseu o matador da Medusa, Teseu o herói ateniense que livrou seu povo do minotauro. Esses heroís esses heroís várias obras modernas
-                e suas histórias têm em comum grandes atos de valentia que livraram a população local de monstros.
+    <main tabindex="0" onclick="closeSidebar()" id="main">
+        <article id="principal">
+            <h1 id="titulo">O que é <br> Mitologia?</h1>
+            <p>Mitologia nada mais é que umconjunto de lendas
+            criadas por um povo durante muitas gerações e elas
+            eram usadas para explicar fenômenos que elesainda 
+            não eram capazes de entender. Por exemplo os gregos 
+            acreditavam que o movimento do sol durante o dia
+            era causado pelo deus Hélio andando com sua carruagem
+            solar pelo céu. A mitologia grega tem diversos deuses e
+            heroís, muitas criaturas e várias histórias com profecias
             </p>
-        </div>
-        <div id="troia">
-            <p class="p_direita">
-                Os Aquiles e Odisseu (também conhecido como Ulisses) são os protagonistas dos poemas épicos mais importantes da História da Literatura (Ilíada e Odisseia), 
-                conhecidos por terem parrticipado dos eventos da guerra de tróia são um dos fatores para a popularidade dos mitos gregos. Não se 
-                sabe se o escritor dessas obras, Homero, realmente existiu.
-            </p>
-            <figure>
-                <img src="imgs/trojan.jpeg" class="img_direita">
-                <figcaption><h3>TRÓIA</h3></figcaption>
-            </figure>
-        </div>
-    </article>
-
-    <section id="final">
-        <h2>Outros Hérois</h2>
-        <article id="outros">
-            <div class="card" id="orfeu">
-                <figure>
-                    <figcaption><h3 class="nome">Orfeu</h3></figcaption>
-                    <img src="imgs/orfeu.jpg">
-                </figure>
-                <p>Com sua harpa encantava homens e criaturas</p>
-            </div>
-            <div class="card" id="jasao">
-                <figure>
-                    <figcaption><h3 class="nome">Jasão</h3></figcaption>
-                    <img src="imgs/Phil Rushton - Jason and the Golden Fleece_ Tags_ golden fleece, jason, argonauts,.jpeg">
-                </figure>
-                <p> Líder dos argonautas e uma das vítimas de Medeia</p>
-            </div>
-            <div class="card" id="belerofonte">
-               <figure>
-                    <figcaption><h3 class="nome">Belerofonte</h3></figcaption>
-                    <img src="imgs/belerofonte.png">
-               </figure>
-                <p>O único cavaleiro de pegasus</p>
-            </div>
-            <div class="card" id="atalanta">
-                <figure>
-                    <figcaption><h3 class="nome">Atalanta</h3></figcaption>
-                    <img src="imgs/atalanta.png">
-                </figure>
-                <p>A mulher mais veloz do mundo.</p>
+            <img src="imgs/Medusa-removebg-preview.png" id="medusa" alt="">
+        </article>
+        <article id="fotos">
+            <h2>Mitologia Grega</h2>
+            <div id="personagens">
+                <div id="row1">
+                    <figure id="foto1">
+                        <img src="imgs/Perseu.jpeg" alt="perseu" >
+                        <h3>PERSEU</h3>
+                    </figure>
+                       
+                    <figure id="foto2">
+                        <img src="imgs/Minotauro.jpeg" alt="minotauro" >
+                        <h3>MINOTAURO</h3>
+                    </figure> 
+                        
+                    <figure id="foto3">
+                        <img src="imgs/Poseidon.jpeg" alt="poseidon" >
+                        <h3>POSEIDON</h3>
+                    </figure>
+                </div>
+                       
+                <div id="row2">
+                    <figure id="foto4">
+                        <img src="imgs/Afrodite.jpeg" alt="Afrodite" >
+                        <h3>AFRODITE</h3>
+                    </figure> 
+                        
+                    <figure id="foto5">
+                        <img src="imgs/Hercules.jpeg" alt="Hercules" >
+                        <h3>HERCULES</h3>
+                    </figure>
+                        
+                    <figure id="foto6">
+                        <img src="imgs/Ares.jpeg" alt="Ares" >
+                        <h3>ARES</h3>
+                    </figure>
+                </div>
             </div>
         </article>
-    </section>
-</main>
-    <footer>
-        <p> Mythos Divinos criado e idealizado em 2024
-            TODOS os direitos reservados <br> ao esforço
-            empregado neste site @Mythos_Divinos @SOCIEDADEGREGA
-        </p>
-        <div id="redes">
-            <img src="imgs/youtube-removebg-preview.png" alt="">
-            <img src="imgs/tiktok-removebg-preview.png" alt="">
-            <img src="imgs/instagram-removebg-preview.png" alt="">
-            <img src="imgs/whatsapp-removebg-preview.png" alt="">
-        </div>
-    </footer> 
+    </main>
     <script src="sidebar.js"></script>
+        <footer>
+            <p> Mythos Divinos criado e idealizado em 2024
+                TODOS os direitos reservados <br> ao esforço
+                empregado neste site @Mythos_Divinos @SOCIEDADEGREGA
+            </p>
+            <div id="redes">
+                <img src="imgs/youtube-removebg-preview.png" alt="">
+                <img src="imgs/tiktok-removebg-preview.png" alt="">
+                <img src="imgs/instagram-removebg-preview.png" alt="">
+                <img src="imgs/whatsapp-removebg-preview.png" alt="">
+            </div>
+
+        </footer>
+        
 </body>
 </html>
-    
-
-
