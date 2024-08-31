@@ -1,5 +1,5 @@
 <!DOCTYPE html>  
-<html lang="pt">  
+<html lang="pt">   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
                 </svg>
             </button>
             <a href="index.html" class="pags">HOME</a>
-            <a href="herois.html" class="pags">HEROÍS</a>
+            <a href="herois.html" class="pags">HERÓIS</a>
             <a href="deuses.html" class="pags">DEUSES</a>
             <a href="lugares.html" class="pags">LUGARES</a>
             <a href="sobre.html" class="pags">SOBRE</a>
@@ -34,59 +34,75 @@
         </button>
     </header>
 <main>
-    <article id="Introdução">
-        <h1>Introdução</h1>
+    <article id="introduçao">
+        <h2>Introdução</h2>
 
         <p>Alguns dos personagens mais famosos da Mitologia Grega eram os heróis, também conhecidos como semi-deuses.
-            Muitos desses heróis lendários eram conhecidos por teem matados criaturas horrendas, terem lutado em guerra,
+            Muitos desses heróis lendários eram conhecidos por terem matado criaturas horrendas, terem lutado em guerra,
             se tornado reis  entre outros grandes feitos. Alguns desses personagens são conhecidos até hoje, são representados em
             filmes séries e livros e estão muito difundidos na cultura pop.
         </p>
     </article>
     <article id="famosos">
-        <h1>Mais Famosos</h1>
-        <img src="imgs/Perseu.jpeg" class="img_esquerda">  
-        <p class="p_esquerda">
-            Os heroís mais famosos atualmente são Herácles dos 12 trabalhos (o nome grego de Hércules, que era seu nome em no Império Romano), 
-            Perseu o matador da Medusa, Teseu o herói ateniense que livrou seu povo do minotauro. Esses heroís esses heroís várias obras modernas
-            e suas histórias têm em comum grandes atos de valentia que livraram a população local de monstros.
-        </p>
-    </article>
-    <article id="homero">
-        <h1>Homero</h1>
-        <p class="p_direita">
-            Os Aquiles e Odisseu (também conhecido como Ulisses) são os protagonistas dos poemas épicos mais importantes da História da Literatura (Ilíada e Odisseia), 
-            conhecidos por terem parrticipado dos eventos da guerra de tróia são um dos fatores para a popularidade dos mitos gregos. O suposto escritor dessas obras, Não se 
-            sabe se o escritor dessas obras, Homero, realmente existiu.
-        </p>
-        <img src="imgs/trojan.jpeg" class="img_direita">
-    </article>
-
-    <article>
-        <h1>Outros Hérois</h1>
-        <div id="outros">
-            <div class="card">
-                <p class="nome">Orfeu</p>
-                <img src="imgs/orfeu.jpg">
-                <p>Com sua harpa encantava homens e criaturas
-                </p>
-            </div>
-            <div class="card">
-                <p class="nome">Jasão</p>
-                <img src="imgs/Phil Rushton - Jason and the Golden Fleece_ Tags_ golden fleece, jason, argonauts,.jpeg">
-                <p> Líder dos argonautas e uma das vítimas de Medeia
-                </p>
-            </div>
-            <div class="card">
-                <p class="nome">Belerofonte</p>
-                <img src="imgs/belerofonte.jpg">
-                <p>O único cavaleiro de pegasus
-                </p>
-            </div>
-            
-
+        <h2>Mais Famosos</h2>
+        <div id="text_famosos">
+            <figure>
+                <img src="imgs/Hercules.png" class="img_esquerda"> 
+                <figcaption><h3>HERCULES</h3></figcaption> 
+            </figure>
+            <p class="p_esquerda">
+                Os heroís mais famosos atualmente são Herácles dos 12 trabalhos (o nome grego de Hércules, que era seu nome em no Império Romano), 
+                Perseu o matador da Medusa, Teseu o herói ateniense que livrou seu povo do minotauro. Esses heroís esses heroís várias obras modernas
+                e suas histórias têm em comum grandes atos de valentia que livraram a população local de monstros.
+            </p>
+        </div>
+        <div id="troia">
+            <p class="p_direita">
+                Os Aquiles e Odisseu (também conhecido como Ulisses) são os protagonistas dos poemas épicos mais importantes da História da Literatura (Ilíada e Odisseia), 
+                conhecidos por terem parrticipado dos eventos da guerra de tróia são um dos fatores para a popularidade dos mitos gregos. Não se 
+                sabe se o escritor dessas obras, Homero, realmente existiu.
+            </p>
+            <figure>
+                <img src="imgs/trojan.jpeg" class="img_direita">
+                <figcaption><h3>TRÓIA</h3></figcaption>
+            </figure>
         </div>
     </article>
+
+    <section id="final">
+        <h2>Outros Hérois</h2>
+        <article id="outros">
+            <div class="card" id="orfeu">
+                <figure>
+                    <figcaption><h3 class="nome">Orfeu</h3></figcaption>
+                    <img src="imgs/orfeu.jpg">
+                </figure>
+                <p>Com sua harpa encantava homens e criaturas</p>
+            </div>
+            <div class="card" id="jasao">
+                <figure>
+                    <figcaption><h3 class="nome">Jasão</h3></figcaption>
+                    <img src="imgs/Phil Rushton - Jason and the Golden Fleece_ Tags_ golden fleece, jason, argonauts,.jpeg">
+                </figure>
+                <p> Líder dos argonautas e uma das vítimas de Medeia</p>
+            </div>
+            <div class="card" id="belerofonte">
+               <figure>
+                    <figcaption><h3 class="nome">Belerofonte</h3></figcaption>
+                    <img src="imgs/belerofonte.png">
+               </figure>
+                <p>O único cavaleiro de pegasus</p>
+            </div>
+            <div class="card" id="atalanta">
+                <figure>
+                    <figcaption><h3 class="nome">Atalanta</h3></figcaption>
+                    <img src="imgs/atalanta.png">
+                </figure>
+                <p>A mulher mais veloz do mundo.</p>
+            </div>
+        </article>
+    </section>
+</main>
     <footer>
         <p> Mythos Divinos criado e idealizado em 2024
             TODOS os direitos reservados <br> ao esforço
@@ -98,8 +114,10 @@
             <img src="imgs/instagram-removebg-preview.png" alt="">
             <img src="imgs/whatsapp-removebg-preview.png" alt="">
         </div>
-
-    </footer>
+    </footer> 
+    <script src="sidebar.js"></script>
+</body>
+</html>
     
-</main>
+
 
