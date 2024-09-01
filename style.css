@@ -70,7 +70,7 @@ nav {
     font-size: 1.8em;
     font-weight: bold;
     text-shadow: 3px 3px black;
-    margin-right: 7em;
+    margin-right: 5%;
 }
 
 .menu-icon {
@@ -515,7 +515,7 @@ main {
     }
 
     nav {
-        gap: 7em;
+        gap: 5%;
     }
 
     #nome {
@@ -564,7 +564,7 @@ main {
     }
 
     #row1, #row2 {
-        gap: 12em;
+        gap: 1%;
     }
 
     #personagens {
