@@ -35,23 +35,21 @@ article img {
     margin: 20px auto;
 }
 
-ul {
-    color: #ffffff;
-    counter-reset: item; 
-    list-style: none; 
-    padding-left: 0; 
+li {
+    color: white;
     font-size: 1.5em;
-  }
-  
-  li {
-    counter-increment: item; 
-    margin-bottom: 5px; 
-  }
-  
-  li::before {
-    content: counter(item) ". ";
-    font-weight: bold; 
-    margin-right: 8px; 
-  }
+    margin-bottom: 1%;
+    margin-left: 4%;
+}
+
+#mitodoze div {
+    display: flex;
+}
+
+#mitodoze img {
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+}
 
 
