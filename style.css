@@ -171,6 +171,7 @@ p {
     height:500px;
     margin-right: 10%;
     width: 400px;
+    cursor: pointer;
 }
 
 @keyframes flutuando {
