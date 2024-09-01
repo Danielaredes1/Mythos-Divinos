@@ -195,7 +195,7 @@ main {
 }
 
 #personagens {
-    margin-left: 40px;
+    margin-left: 2%;
 }
 
 #row1, #row2 {
@@ -279,9 +279,6 @@ main {
         flex-direction: column;
     }
 
-    #personagens {
-        margin-left: 20px;
-    }
 
     #fotos figure img {
         height: 14em;
@@ -334,7 +331,7 @@ main {
     }
 
     #personagens {
-        margin-left: 20px;
+        margin-left: 10%;
     }
 
     #fotos figure img {
@@ -372,6 +369,7 @@ main {
 
     #principal p {
         font-size: 1.5em;
+        width: 80%;
     }
 
     #fotos h2 {
@@ -386,6 +384,10 @@ main {
         height: 354px;
         
     }
+
+    #medusa {
+        display: none;
+     }
     
     @keyframes flutuando {
       from { top: -494px; }
@@ -401,7 +403,7 @@ main {
     }
 
     #personagens {
-        margin-left: 170px;
+        margin-left: 20%;
     }
 
     #fotos figure {
@@ -495,7 +497,7 @@ main {
     #personagens {
         display: flex;
         flex-direction: row;
-        margin-left: 200px;
+        margin-left: 10%;
     }
 }
 
@@ -566,6 +568,6 @@ main {
     }
 
     #personagens {
-        margin-left: 200px;
+        margin-left: 5%;
     }
 }
