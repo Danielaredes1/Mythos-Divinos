@@ -70,7 +70,7 @@ nav {
     font-size: 1.8em;
     font-weight: bold;
     text-shadow: 3px 3px black;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
 .menu-icon {
@@ -388,6 +388,15 @@ main {
     #medusa {
         display: none;
      }
+
+    #famosos figure {
+        display: none;
+    }
+
+    #famosos p {
+        
+        text-align: center;
+    }
     
     @keyframes flutuando {
       from { top: -494px; }
