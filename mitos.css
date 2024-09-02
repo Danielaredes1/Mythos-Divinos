@@ -35,21 +35,27 @@ article img {
     margin: 20px auto;
 }
 
-li {
-    color: white;
+ul {
+    color: #ffffff;
+    counter-reset: item; 
+    list-style: none; 
+    padding-left: 0; 
     font-size: 1.5em;
-    margin-bottom: 1%;
-    margin-left: 4%;
-}
-
-#mitodoze div {
-    display: flex;
-}
-
-#mitodoze img {
-    width: 50%;
-    height: 50%;
-    margin-top: 10%;
-}
-
-
+  }
+  
+  li {
+    counter-increment: item; 
+    margin-bottom: 5px; 
+  }
+  
+  li::before {
+    content: counter(item) ". ";
+    font-weight: bold; 
+    margin-right: 8px; 
+  }
+  iframe{
+    width: 30em;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
