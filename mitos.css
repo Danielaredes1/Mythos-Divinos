@@ -54,8 +54,16 @@ ul {
     margin-right: 8px; 
   }
   iframe{
-    width: 30em;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+    width: 70%;
+    height: 500px;
+  }
+
+  #mitopsiquê {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mitopsiquê iframe {
+    margin-left: auto;
+    margin-right: auto;
   }
