@@ -270,9 +270,6 @@ main {
         text-align: center;
     } 
 
-
-  
-
     #row1, #row2 {
         flex-direction: column;
     }
@@ -321,15 +318,12 @@ main {
         text-align: center;
     } 
 
-
-   
-
     #row1, #row2 {
         flex-direction: column;
     }
 
     #personagens {
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     #fotos figure img {
@@ -412,7 +406,7 @@ main {
     }
 
     #personagens {
-        margin-left: 20%;
+        margin-left: 5%;
     }
 
     #fotos figure {
@@ -445,7 +439,36 @@ main {
     }
 
     #text_famosos {
-        padding: 0;
+        padding: 0; 
+    }
+
+    main #outros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .card {
+        width: 90%;
+    }
+    
+    .card img {
+        width: 13em;
+        height: 13em;
+        margin: 0;
+    }
+    
+    .card figure {
+        width: 13em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Deus article img {
+        display: none;
+    }
+
+    #Mito article img {
+        display: none;
     }
 }
 
