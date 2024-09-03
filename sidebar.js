@@ -10,6 +10,7 @@ function toggleSidebar()
     {
         nav.style.marginLeft = '0vw';
         nav.style.animationName = 'sidebar';
+        nav.style.display = 'flex';
         
     } 
     else 

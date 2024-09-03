@@ -102,19 +102,28 @@ nav {
         animation-duration: 1s;
         margin-left: 100vw;
         z-index: 2;
+        display: none;
     }
 }
 
 @keyframes sidebar {
-    from {margin-left: 100vw;}
-    to {margin-left: 0vw;}
+    from {
+        margin-left: 100vw;
+        display: none;
+    }
+    to {
+        margin-left: 0vw;
+        display: flex;
+    }
 }
 
 footer{
     background-color:#262a30;
     width: 100%;
-    height: 5.4em;
+    height: 50%;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer p {
@@ -127,11 +136,14 @@ footer p {
 footer img {
     width: 30px;
     margin-right: .5%;
-    display: inline-block;
+    display: inline;
 }
 
 #redes {
-    margin-left: 47%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 200px;
 }
 
 #principal {
