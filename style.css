@@ -120,7 +120,7 @@ nav {
 footer{
     background-color:#262a30;
     width: 100%;
-    height: 30%;
+    height: 20%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -133,17 +133,18 @@ footer p {
     text-align: center;
 }
 
-footer img {
-    width: 30px;
-    margin-right: .5%;
-    display: inline;
-}
-
 #redes {
-    margin-left: auto;
-    margin-right: auto;
+   text-align: center;
     padding: 10px;
     width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#redes img {
+    width: 2em;
+    height: 2em;
+    
 }
 
 #principal {
