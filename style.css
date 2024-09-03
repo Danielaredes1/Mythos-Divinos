@@ -623,8 +623,8 @@ main {
         transform: translate(-0.1em,-8.6em);
     }
 
-    #row1, #row2 {
-        gap: 1%;
+    #row2 {
+        gap: 2px;
     }
 
     #personagens {
