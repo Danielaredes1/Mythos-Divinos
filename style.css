@@ -481,7 +481,7 @@ main {
         display: none;
     }
 
-    #Mito article img {
+    #Mito article img, iframe {
         display: none;
     }
 }
