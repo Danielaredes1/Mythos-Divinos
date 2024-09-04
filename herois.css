@@ -65,6 +65,39 @@ figure {
     position: relative;
 }
 
+.escondido {
+    display: none;
+}
+
+@media (max-width:851px) {
+    #famosos .escondido {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2em;
+    }
+
+    #famosos p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #famosos div {
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 80%;
+        margin-left: 10%;
+        padding: 0;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    #famosos .p_direita {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 #direita {
     margin-top: 5%;
 }

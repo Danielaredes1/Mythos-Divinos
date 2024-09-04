@@ -447,6 +447,7 @@ main {
         display: none;
     }
 
+
     #famosos p {
         text-align: center;
     }
@@ -489,6 +490,7 @@ main {
     #fotos figure:hover h3 {
         transform: translate(-0.1em,-6.1em);
     }
+
 }
 
 
