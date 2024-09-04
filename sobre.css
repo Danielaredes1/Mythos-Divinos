@@ -68,3 +68,8 @@ section {
     font-size: 1.5em;
     margin-left: 4%;
 }
+
+#creditos a::selection {
+  color: red;
+  background-color: yellow;
+}
